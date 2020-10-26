@@ -32,6 +32,20 @@ NavBar Styling
 }
 
 /*
+NavBar TRANSPARENT and scrolling
+*/
+.navbar-dark {
+    background-color: transparent !important;
+    transition: background-color 400ms linear;
+}
+
+.navbar-dark.scrolled {
+    background-color: black !important;
+    transition: background-color 400ms linear;
+}
+
+
+/*
 NavBar img size
 */
 .navbar-brand img {
@@ -188,6 +202,12 @@ Drop down buttons
     cursor: pointer
 }
 #it-toggle {
+    cursor: pointer
+}
+#energy-toggle-up {
+    cursor: pointer
+}
+#it-toggle-up {
     cursor: pointer
 }
 
