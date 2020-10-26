@@ -1,7 +1,16 @@
 
 /*
+Smooth scroll using only css
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*
 https://www.cssfontstack.com/Futura
 */
+
 
 body {
     overflow-x: hidden;
@@ -125,9 +134,10 @@ Video
     letter-spacing: .2rem;
     text-shadow: .1rem .1rem .8rem black;
     padding-bottom: 1rem;
+   
 }
 .video-banner h3{
-    font-size: 2rem;
+    font-size: 1rem;
     text-shadow: .1rem .1rem .5rem black;
     padding-bottom: 1.5rem;
 
@@ -142,6 +152,17 @@ Video
 
 
 
+
+
+
+
+
+
+
+  /*
+MEDIA QUERIES
+*/
+
 @media (max-width: 768px) {
 
 .video-banner h1{
@@ -150,13 +171,13 @@ Video
     padding-bottom: .5rem;
 }
 .video-banner h3{
-    font-size: 1.1rem;
+    font-size: 0.8rem;
     padding-bottom: 1.2rem;
 
 }
 
 .btn-lg {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: .5rem 1rem;
 }
 
