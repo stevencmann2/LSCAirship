@@ -20,6 +20,7 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
+    cursor: url("../images/Airship-cursor.jpg"), auto;
 
 }
 
@@ -28,7 +29,12 @@ NavBar Styling
 */
 
 .navbar {
-    background: rgba(0, 0, 0, 0.6)
+    background: rgba(0, 0, 0, 0.6);
+    
+}
+
+#initial-logo {
+    height: 6rem
 }
 
 /*
@@ -103,6 +109,7 @@ p {
     width: 100%;    
 
 }
+
 
 
 
@@ -220,6 +227,8 @@ Countdown Card
     bottom:0.5rem;
     right:0.5rem;
     position: fixed;
+    background-color: chartreuse;
+    opacity:0.8;
     z-index:1;
 }
 .countdown-card-body {
@@ -227,6 +236,8 @@ Countdown Card
     margin: 0.2rem;
 
 }
+
+
 
 
 
