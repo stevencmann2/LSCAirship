@@ -1,5 +1,32 @@
 $(document).ready(function(){
+    //MOMENT INSTANCE
+    let grandOpening = new Date('April 1, 2021 00:00:00').getTime();
+    
+    function countdown() {
+        //set time variables
+        let now = new Date().getTime();
+        let difference = grandOpening - now;
+        // match for determing time values
+        const second = 1000;
+        const minute = second * 60;
+        const hour = minute * 60;
+        const day = hour * 24
+        //calculations for time variables
+        let d = Math.floor(difference / (day));
+        let h = Math.floor((difference % (day))/ (hour));
+        let m = Math.floor((difference % (hour)) / (minute));
+        let s = Math.floor((difference % (minute)) / second);
+        //replace text element
+        $("#day").text(d);
+        $(".hour").text(h);
+        $(".minute").text(m) ;
+        $(".second").text(s);
+    }
 
+    //DISPLAY COUNTDOWN FUNCTION
+    setInterval(function() {
+        countdown(), 1000
+        });
 
     //navbar change on scroll
     $(window).scroll(function() {
