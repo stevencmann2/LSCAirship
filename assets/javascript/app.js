@@ -2,6 +2,7 @@ $(document).ready(function(){
     //MOMENT INSTANCE
     let grandOpening = new Date('April 1, 2021 00:00:00').getTime();
     
+    //logic for contdown clock
     function countdown() {
         //set time variables
         let now = new Date().getTime();
@@ -18,9 +19,9 @@ $(document).ready(function(){
         let s = Math.floor((difference % (minute)) / second);
         //replace text element
         $("#day").text(d);
-        $(".hour").text(h);
-        $(".minute").text(m) ;
-        $(".second").text(s);
+        $("#hour").text(h);
+        $("#minute").text(m) ;
+        $("#second").text(s);
     }
 
     //DISPLAY COUNTDOWN FUNCTION
@@ -28,9 +29,17 @@ $(document).ready(function(){
         countdown(), 1000
         });
 
+    // COUNTDOWN CARD CLOSE
+    $('.close').click(function(){
+        $('#countdown-close').parent().slideUp();
+      })
+
     //navbar change on scroll
     $(window).scroll(function() {
-        $(".navbar").toggleClass('scrolled', $(this).scrollTop() > $(".navbar").height()*5)
+        // toggle navbar color 
+        $(".navbar").toggleClass('scrolled', $(this).scrollTop() > $(".navbar").height()*5);
+        //toggle logo disapear
+       $("#initial-logo").toggleClass("animate__animated animate__fadeOut", $(this).scrollTop() > $(".navbar").height()*5)
     })
 
 

@@ -211,8 +211,22 @@ Drop down buttons
     cursor: pointer
 }
 
+  /*
+Countdown Card
+*/
 
+#countdown-card {
+    width: 25%;
+    bottom:0.5rem;
+    right:0.5rem;
+    position: fixed;
+    z-index:1;
+}
+.countdown-card-body {
+    padding: 0.2rem;
+    margin: 0.2rem;
 
+}
 
 
 
@@ -220,6 +234,22 @@ Drop down buttons
   /*
 MEDIA QUERIES
 */
+
+
+@media (max-width: 992px){
+
+    #cdc-header:{
+        font-size: 0.8rem
+    }
+    .cdc-numbers {
+        font-size: 0.8rem
+    }
+
+    .cdc-titles {
+        font-size: 0.5rem
+    }
+
+}
 
 @media (max-width: 768px) {
 
@@ -237,6 +267,17 @@ MEDIA QUERIES
 .btn-lg {
     font-size: 0.8rem;
     padding: .5rem 1rem;
+}
+
+#cdc-header:{
+    font-size: 0.9rem
+}
+
+.cdc-titles {
+    font-size: 0.1rem
+}
+.cdc-numbers {
+    font-size: 0.9rem
 }
 
 };

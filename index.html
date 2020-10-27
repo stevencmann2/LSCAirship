@@ -20,10 +20,12 @@
    
     <!-- NAVBAR -->
     <nav class="navbar navbar-dark fixed-top">  
+        
         <a class="navbar-brand mx-auto" href="index.html" >
-            <img src="./assets/images/logos/LSC_Vertical.jpg" class="d-inline-block align-top" alt="LoneStar College Logo" loading="lazy">
+            <img src="./assets/images/logos/LSC_Vertical.jpg" class="d-inline-block align-top" id="initial-logo" alt="LoneStar College Logo" loading="lazy">
             LSC AIRSHIP
         </a>
+        
     </nav>
 
     <!--VIDEO BANNER playsinline allows for mobile playing-->
@@ -44,20 +46,42 @@
         <a class="btn btn-outline-light btn-large" href="#programs">See Programs</a>
     </div>
 
-    
+    <!--COUNTDOWN CARD-->
+    <div class="card text-center float-right" id="countdown-card">
+        
+        <div class="card-body" id="countdown-close">
+            <button type="button" class="close" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+          <h5 class="card-title" id="cdc-header">Grand Opening!</h5>
+          
+          <div class="row text-center">
+
+        
+            <div class="col countdown-card-body"  >
+                <p class="cdc-numbers"id="day"></p>
+                <p class="cdc-titles">Days</p>
+            </div>
+            <div class="col countdown-card-body" >
+                <p class="cdc-numbers" id="hour"></p>
+                <p class="cdc-titles"> Hours</p>
+            </div>
+            <div class="col countdown-card-body" >
+                <p class="cdc-numbers" id="minute"></p>
+                <p class="cdc-titles">Minutes</p>
+            </div>
+            <div class="col countdown-card-body" >
+                <p class="cdc-numbers" id="second"></p>
+                <p class="cdc-titles">Seconds</p>
+            </div>
+            </div>
+
+        
+      </div>
+    </div>
     <!--CALL TO ACTION CARD-->
 
     <div class="CTA bg-success p-2 container">
-        <div class="row text-center">
-            <div class="col" id="day"></div>
-            <div>Days</div>
-            <div class="hour col"></div>
-            <div>Hours</div>
-            <div class="minute col"></div>
-            <div>Minutes</div>
-            <div class="second col"></div> 
-            <div>Seconds</div>
-        </div>
         <div class="row">
             <div class="col-md-12 text-left pl-4 ml-2">
                 <div class="card-body">
