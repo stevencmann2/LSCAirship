@@ -1,16 +1,7 @@
-
-/*
-Smooth scroll using only css
-*/
-
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
-
-/*
-https://www.cssfontstack.com/Futura
-*/
 
 
 body {
@@ -431,6 +422,8 @@ MEDIA QUERIES
 
 @media screen and (max-width: 768px) {
 
+   
+
 
     #bgvid{
         display:none;
@@ -450,16 +443,18 @@ MEDIA QUERIES
 }
 
 
+
 .video-banner h1{
-    font-size: 1.4rem;
+    font-size: 2.5rem;
     letter-spacing: .1.5rem;
     padding-bottom: .5rem;
 }
 .video-banner h3{
-    font-size: 0.8rem;
+    font-size: 1rem;
     padding-bottom: 1.2rem;
 
 }
+
 
 .btn-lg {
     font-size: 0.8rem;
