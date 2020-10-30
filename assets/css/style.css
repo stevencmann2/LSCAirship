@@ -5,6 +5,7 @@ Smooth scroll using only css
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /*
@@ -21,7 +22,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: black;
-    background-image: linear-gradient(70deg, #c7eafb 0%, black 74%);
+    background-image: linear-gradient(10deg, #c7eafb 0%, black 74%);
     
     
 
@@ -65,8 +66,6 @@ NavBar img size
 .navbar-brand img {
     height: 2rem
 }
-
-
 
 
 
@@ -131,10 +130,13 @@ p {
 
 }
 
+
+
+
 #partnernships, #it, #energy{
     font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
     font-size: 1.2em; font-style: normal; 
-    color: white;
+    color: #f1c585;
     font-variant: normal; 
     font-weight: 700; 
     line-height: 1.2; 
@@ -142,7 +144,7 @@ p {
 }
 
 #partnernships:hover, #it:hover, #energy:hover {
-    color: #b30838;
+    color: #003768;
 
 }
 
@@ -281,6 +283,7 @@ buttons
  color: white;
 }
 
+
   /*
 SPACING
 */
@@ -318,12 +321,68 @@ SPACING
     font-size: 0.5rem;
 }
 
+ /*
+clock font
+*/
+
+
+.cdc-numbers{
+
+    font-family: 'Orbitron', sans-serif;
+    color: #f1c585
+}
+
+ /*
+PROGRAMS BUTTONS
+*/
+
+.prog_button{
+
+    height:100%;
+    background-color: #b30838;
+
+}
+
+ /*
+OVERLAY 
+*/
+
+#overlay_content {
+    opacity: 0;
+    transition: 1.1s;
+
+}
+
+#overlay_content:hover{
+    opacity: 1;
+    background: rgb(0, 55, 104, 0.8);
+}
+
+#quote {
+    font-size: 2rem;  
+    text-shadow: .1rem .1rem .8rem black
+}
+
+#name{
+    font-size: 1.5rem;  
+    text-shadow: .1rem .1rem .8rem black;
+
+}
+
+#job_title{
+    font-style: italic; 
+    font-size: 1.2rem;  
+    text-shadow: .1rem .1rem .8rem black
+
+}
+
   /*
 MEDIA QUERIES
 */
 
 
-@media (max-width: 992px){
+
+@media screen and (max-width: 992px){
 
     #cdc-header:{
         font-size: 0.8rem
@@ -336,9 +395,60 @@ MEDIA QUERIES
         font-size: 0.5rem
     }
 
+
+  /*
+    Overlay
+*/
+
+    #quote {
+        font-size: 1.8rem;  
+        text-shadow: .1rem .1rem .8rem black
+    }
+    
+    #name{
+        font-size: 1.2rem;  
+        text-shadow: .1rem .1rem .8rem black;
+    
+    }
+    
+    #job_title{
+        font-style: italic; 
+        font-size: 1rem;  
+        text-shadow: .1rem .1rem .8rem black
+    
+    }
+
+    #overlay_content {
+        opacity: 1;
+        transition: 0;
+        background: rgb(0, 55, 104, 0.8);
+    
+    }
+ 
 }
 
-@media (max-width: 768px) {
+
+
+@media screen and (max-width: 768px) {
+
+
+    #bgvid{
+        display:none;
+    }
+
+    #video{
+        background-image: url('../images/Houston.png');
+    }
+    
+
+
+
+
+
+#pop_up{
+    display: none;
+}
+
 
 .video-banner h1{
     font-size: 1.4rem;
@@ -367,4 +477,54 @@ MEDIA QUERIES
     font-size: 0.9rem
 }
 
+.programs_btn_sec {
+    margin-bottom: 5vh;
+}
+
+  /*Overlay*/
+
+#quote {
+    font-size: 1.2rem;  
+    text-shadow: .1rem .1rem .8rem black
+}
+
+#name{
+    font-size: 1rem;  
+    text-shadow: .1rem .1rem .8rem black;
+
+}
+
+#job_title{
+    font-style: italic; 
+    font-size: 0.5rem;  
+    text-shadow: .1rem .1rem .8rem black
+
+}
+
+
 };
+
+@media screen and (max-width: 576px) {
+
+      /*Overlay*/
+
+#quote {
+    font-size: 1rem;  
+    text-shadow: .1rem .1rem .8rem black
+}
+
+#name{
+    font-size: 0.8rem;  
+    text-shadow: .1rem .1rem .8rem black;
+
+}
+
+#job_title{
+    font-style: italic; 
+    font-size: 0.3rem;  
+    text-shadow: .1rem .1rem .8rem black
+
+}
+    
+} 
+

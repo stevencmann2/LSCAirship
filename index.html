@@ -12,6 +12,8 @@
     
     <!--FontAwesome Kit Code-->
     <script src="https://kit.fontawesome.com/4e9921963f.js" crossorigin="anonymous"></script>
+    <!-- GOogle fonts clock-->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
     <!-- Custome CSS-->
     <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
@@ -19,6 +21,7 @@
    
    
     <!-- NAVBAR -->
+    
     <nav class="navbar navbar-dark fixed-top">  
         
         <a class="mx-auto" id="inner_nav" href="index.html" >
@@ -38,6 +41,10 @@
             </div>
     </div>
 
+
+
+
+
     <div class="container">
         <div class="video-banner">
             <h1>Soar Beyond</h1>
@@ -48,16 +55,18 @@
         </div>
     </div>
 
-    <!--COUNTDOWN CARD-->
-    <div class="container">
-    <div class="card text-center float-right" id="countdown-card" style="min-width: 30vw; height: auto;">
+
+   <!--COUNTDOWN CARD-->
+   <div class="container" id="pop_up">
+    <div class="card text-center border-secondary float-right" id="countdown-card" style="min-width: 30vw; height: auto;">
         
         <div class="card-body" id="countdown-close">
             
             <button type="button" class="close" aria-label="Close">
                 <span aria-hidden="true" style="color: #ffffff;">&times;</span>
               </button>
-          <h5 class="card-title" id="cdc-header">Grand Opening!</h5>
+          <h4 class="card-title" id="cdc-header">Launching In:</h4>
+          
         
     
           <div class="row text-center">
@@ -87,15 +96,15 @@
       </div>
     </div>
 </div>
-  
 
      <!--PROGRAMS DONT FORGET TO MENTION OTHER DEGREES-->
-   <div class="container" id="programs" style="margin-top: 10vh">
+   <div class="container-fluid" id="programs" style="margin-top: 10vh">
     <div class="row justify-content-center mt-4">
         <div class="col-md-8 text-center">
-            <h1 class="header_1_spacing" style="color: white">The Lone Star Difference</h1>
-            <p class="p_spacing" style="color: #ffffff;">Aside from offering two-year degrees such as Associate Arts (AA) and Assosciate of Science (AS), Lone Star College is proud to announce flagship programs
-                in Information Technology and Renewable Energy. These programs are dedicated to providing cutting edge coursework and experience to Houston's next generation of leaders.
+            <h1 class="header_1_spacing" style="color: white">Aboard the Future</h1>
+            <p class="p_spacing" style="color: #ffffff;">
+                Aside from offering two-year degrees such as Associate Arts (AA) and Assosciate of Science (AS), Lone Star College is proud to announce flagship programs
+                in Information Technology and Renewable Energy, exclusive to the Airship. These programs are dedicated to providing cutting edge coursework and experience to Houston's next generation of leaders.
             </p>
         </div>
     </div>
@@ -106,17 +115,17 @@
 
 <!--THE NEW TOGGLE MENU-->
 
-<div class="container" style="margin-bottom: 7vh;">
-    <div class="row justify-content-center">
+<div class="container" style="margin-bottom: 7vh; margin-top: 4vh">
+    <div class="row d-flex justify-content-around text-center">
         
-            <div class="col-3" style="height:100%;">
-                <button id="it" class="btn shadow-none" type="button" data-toggle="collapse"  aria-expanded="false" aria-controls="#accordian-content">Information Technology</button>
+            <div class="col-lg-4 col-md-4 col-sm-12 programs_btn_sec" >
+                <button id="it" class="btn shadow-none prog_button" type="button" data-toggle="collapse"  aria-expanded="false" aria-controls="#accordian-content">Information Technology</button>
             </div>
-            <div class="col-3" style="height:100%;">
-                <button id="energy" class="btn shadow-none" type="button" data-toggle="collapse"  aria-expanded="false" aria-controls="#accordian-content">Renewable Energy</button>
+            <div class="col-lg-4 col-md-4 col-sm-12 programs_btn_sec" >
+                <button id="energy" class="btn shadow-none prog_button" type="button" data-toggle="collapse"  aria-expanded="false" aria-controls="#accordian-content">Renewable Energy</button>
             </div>
-            <div class="col-3" style="height:100%;">
-                <button id="partnernships" class="btn shadow-none" type="button" data-toggle="collapse"  aria-expanded="false" aria-controls="#accordian-content">Partnerships & Certifications</button>
+            <div class="col-lg-4 col-md-4 col-sm-12 programs_btn_sec" >
+                <button id="partnernships" class="btn shadow-none prog_button" type="button" data-toggle="collapse"  aria-expanded="false" aria-controls="#accordian-content">Partnerships & Certifications</button>
             </div>
         
 
@@ -138,19 +147,19 @@
 
 
  <!--AIRSHIP LOCATION AND DETAILS ABOUT AIRSHIP-->
- <div class="backg-image">
+ <div class="container-fluid backg-image">
     <div class="container">
  <div class="row justify-content-center m-auto text-center">
         <div class="col-md-8 text-center" style="margin-top: 10vh;">
-            <h1 class="header_1_spacing">Simply Look Up</h1>
+            <h1 class="header_1_spacing animate__animated animate__fadeIn">Our Floating Campus</h1>
             
             <img class="img-fluid p-4 mb-4" src="./assets/images/Airship-transparent.png"  alt="Lone Star College Airship">
        
             <p class="p_spacing">
 
-                With 5,848 high school graduates alone in the fall of 2020, Lone Star College has been the choice of area high school graduates. That is ten times 
+                Lone Star College has been the choice of Houston area high school graduates, with 5,848 high school graduates alone in the fall of 2020. That is ten times 
                 the number of students choosing the University of Houston and six times as many who attended Texas A&M University! 
-                The need for innovation within our education system has lead us to this very point.
+                The growing need for innovation within our education system has lead us to this very point.
                 <br><br>
                 When building our 8th Lone Star College campus, we have been dedicated to the progression of learning environments.
                 Using an innovative combination of lighter-than-air technology, the Airship campus has the ability to easily move about the Houston area, 
@@ -159,8 +168,8 @@
             </p>
         </div>
     </div>
-    <div class="row justify-content-center m-auto text-center" >
-        <div class="col-12" style="margin-bottom: 7vh">
+    <div class="row d-flex justify-content-center" >
+        <div class="col-12" style="margin-bottom: 7vh;">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3455.624493106928!2d-95.33897675004746!3d29.990219881813204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b423d94355c7%3A0x9cc6b4fcc8c0c231!2sGeorge%20Bush%20Intercontinental%20Airport!5e0!3m2!1sen!2sus!4v1604024799736!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen aria-hidden="false" tabindex="0"></iframe>
         </div>
     </div>
@@ -171,44 +180,41 @@
 
 
      <!--CHANCELLOR QUOTE AND PHOTO-->
-     <div class="backg-blue">
-        <div class="container">
-            <div class="row m-auto justify-content-center text-center">
-                <div class="col-md-5 sm-12 m-auto p-4 mb-4">
-                    <p class="pt-4 m-auto text-left p_spacing" style="color: white">
-                        "Where better to learn about cloud based computing than in the clouds? 
-                        I think it's a perfect metaphor for what we are trying to get across to our students"
-                    </p>
-                    <h4 class="pt-4 m-auto text-left" style="color: white">
-                        - Chancellor Lonny Starr
-                    </h4>
+     
+
+
+    
+    <div class="card bg-dark text-white" style="width: 100%; border:none">
+        <img class="card-img" src="./assets/images/LonnyStarr.jpg"  alt="Chancellor Lonny Starr">
+
+
+        <div class="card-img-overlay d-flex overflow-auto" id="overlay_content">
+            <div class="my-auto">
+                <div class="row">
+                    <div class="col-4 mx-auto">
+                        <img class="img-fluid p-4 " style="border-radius: 50%;" src="./assets/images/LonnyStarr.jpg"  alt="Chancellor Lonny Starr">
+                    </div>
                 </div>
-                <div class="col-md-5 col-sm-12">
-                    <img class="img-fluid p-4" style="border-radius: 50%;" src="./assets/images/LonnyStarr.jpg"  alt="Chancellor Lonny Starr">
+
+                <div class="row mt-4">
+                    <div class="col-8 mx-auto mt-4">
+                        <p class="card-text text-center" id="quote" >"Where better to learn about cloud based computing than in the clouds? I think it's a perfect metaphor for what we are trying to get across to our students"</p>
+                    </div>
                 </div>
+                   
+                    <div class="row mt-4 mb-4">
+                    <div class="col-4 mx-auto mt-3">
+                        <h4 class="card-text text-center" id="name">Lonny Starr</h4>
+                        <h4 class="card-text text-center" id="job_title">Chancellor</h4>
+
+                    </div>
+                    </div>
+                    </div>
+                 </div>
             </div>
-        </div>
-    </div>
-
-    
-
-  
-
-   
-
+        
      
-     
-     <!--SECTION 2-->
-     <!-- <div class="row justify-content-center">
-        <div class="col-md-8 text-center">
-            <h1> FAQ ACCORDIAN FAQ ACCORDIAN FAQ ACCORDIAN</h1>
-            <p>Description of airship college</p>
-        </div>
-    </div> -->
     
-
-
-
 
 
     <!-- Footer -->
@@ -221,7 +227,9 @@
         <!-- Grid column -->
         <div class="col-md-4 mt-md-0 mt-3">
           <!-- Content -->
+          <a href="index.html">
           <img src="./assets/images/logos/lonestarTransparent.png" class="img-fluid"  style="max-width: 200px; height: auto" alt="LoneStar College Logo" loading="lazy">
+            </a>
         </div>
         <!-- Grid column -->
         <hr class="clearfix w-100 d-md-none pb-3">
@@ -231,18 +239,18 @@
           <!-- Links -->
           <h5 class="text-uppercase">Resources</h5>
   
-          <ul class="list-unstyled" style="font-size: 1.1rem;" >
-            <li>
-              <a class="links-blue" data-targettype="webpage" href="https://www.lonestar.edu/admissions.htm" target="_blank">Admissions</a>
+          <ul class="list-unstyled" style="margin-top: 3vh; font-size: 1.1rem;" >
+            <li style="padding: 3px">
+              <a class="links-blue"  href="https://www.lonestar.edu/admissions.htm" target="_blank">Admissions</a>
             </li>
-            <li>
-              <a class="links-blue" data-targettype="webpage" href="https://www.lonestar.edu/lsc-online/" target="_blank">LSC Online</a>
+            <li style="padding: 3px">
+              <a class="links-blue"  href="https://www.lonestar.edu/lsc-online/" target="_blank">LSC Online</a>
             </li>
-            <li>
-              <a class="links-blue" ata-targettype="webpage" href="https://services.lonestar.edu/tmmc/Short.aspx" target="_blank">Request Info</a>
+            <li style="padding: 3px">
+              <a class="links-blue"  href="https://services.lonestar.edu/tmmc/Short.aspx" target="_blank">Request Info</a>
             </li>
-            <li>
-              <a class="links-blue" ata-targettype="webpage" href="https://my.lonestar.edu/psp/porprd/?cmd=login&languageCd=ENG&" target="_blank">myLoneStar</a>
+            <li style="padding: 3px">
+              <a class="links-blue"  href="https://my.lonestar.edu/psp/porprd/?cmd=login&languageCd=ENG&" target="_blank">myLoneStar</a>
             </li>
           </ul>
   
@@ -253,30 +261,44 @@
         <div class="col-md-4 mb-md-0 mb-3">
   
           <!-- Links -->
-          <h5 class="text-uppercase">Links</h5>
+          <h5 class="text-uppercase">Stay Connected</h5>
   
-          <ul class="list-unstyled">
-            <li>
-                <a data-targettype="webpage" href="https://www.linkedin.com/company/lone-star-college/" target="_blank" title="Visit LSC on LinkedIn.">
+          <ul class="list-unstyled d-flex justify-content-center" style="margin-top: 3vh">
+            <li style="padding: 3px 10px">
+                <a  href="https://www.linkedin.com/company/lone-star-college/" target="_blank" title="Visit LSC on LinkedIn.">
                     <i class="fab fa-linkedin-in fa-2x social_icon links-blue"></i>
                   </a>
             </li>
-            <li>
-                <a data-targettype="webpage" href="https://www.instagram.com/lonestarcollege/#" target="_blank" title="Visit LSC on Instagram.">
+            <li style="padding: 3px 10px">
+                <a  href="https://www.instagram.com/lonestarcollege/#" target="_blank" title="Visit LSC on Instagram.">
                     <i class="fab fa-instagram fa-2x social_icon links-blue"></i>
                   </a>
             </li>
-            <li>
-                <a data-targettype="webpage" href="https://www.youtube.com/user/lonestarcollege" target="_blank" title="Visit LSC on Youtube.">
+            <li style="padding: 3px 10px">
+                <a  href="https://www.youtube.com/user/lonestarcollege" target="_blank" title="Visit LSC on Youtube.">
                     <i class="fab fa-youtube fa-2x social_icon links-blue"></i>
                   </a>
             </li>
-            <li>
-                <a data-targettype="webpage" href="https://www.facebook.com/LoneStarCollege" target="_blank" title="Visit LSC on Facebook.">
+            <li style="padding: 3px 10px">
+                <a  href="https://www.facebook.com/LoneStarCollege" target="_blank" title="Visit LSC on Facebook.">
                     <i class="fab fa-facebook fa-2x social_icon links-blue"></i>
                   </a>
             </li>
           </ul>
+
+         
+            
+            <div class="text-center mt-4 pt-4" style="text-decoration: none; margin-bottom: 0; color: white; font-size: 0.9em;">
+                <p>Lone Star College System Office
+                    <br>
+                    5000 Research Forest Drive
+                    <br>
+                    The Woodlands, Texas 77381
+                    <br>
+                    832.813.6500
+                 </p>
+            </div>
+            
   
         </div>
         <!-- Grid column -->
@@ -308,7 +330,7 @@
     </script>
    
     <!--Custom JS-->
-    <script charset="utf-8" src="./assets/javascript/app.js"></script>
+    <script src="./assets/javascript/app.js"></script>
 
 </body>
 </html>

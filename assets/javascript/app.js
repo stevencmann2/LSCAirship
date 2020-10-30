@@ -49,6 +49,13 @@ $(document).ready(function(){
 
     });
 
+    $("#cdc-button").click(function (e) {
+        e.preventDefault();
+         window.open("https://www.lonestar.edu/admissions.htm")
+
+    });
+    
+
     
     //navbar change on scroll
     $(window).scroll(function() {
@@ -57,24 +64,12 @@ $(document).ready(function(){
         $("#inner_nav").toggleClass("navbar-brand", $(this).scrollTop() > $(".navbar").height()*1.5)
         $("#inner_nav").toggleClass("animate__animated animate__flipInX", $(this).scrollTop() > $(".navbar").height()*1.5);
         $("#inner_nav").toggleClass("navbar-brand", $(this).scrollTop() > $(".navbar").height()*1.5)
-        
-        
-        // $("#inner_nav").toggleClass("animate__animated animate__lightSpeedInLeft", $(this).scrollTop() < $(".navbar").height()*1.5);
-
+        $(".navbar").toggleClass("shadow-lg", $(this).scrollTop() > $(".navbar").height()*1.5)
 
        
-        
-        //toggle logo disapear
-    //    $("#initial-logo").toggleClass("animate__animated animate__fadeOut", $(this).scrollTop() > $(".navbar").height()*1.5)
     })
 
-    /////// Banner accordian
-
-    
-
-
-    
-
+    /////// PROGRAMS accordian
     const it = $("#it");
     const energy = $("#energy");
     const partnerships = $("#partnernships")
@@ -87,9 +82,10 @@ $(document).ready(function(){
         content.addClass("text-center")
         content.append(
             `
-            <div class="row p-4">
-                <div class="col-lg-6 col-sm-12">
+            <div class="row p-4 m-4">
+                <div class="col-lg-6 col-sm-12 my-auto">
                     <h3>Cloud Computing</h3>
+                    <br>
                     <p>On the cutting edge of technology, Lone Star College is proud to offer our new IT program.
                         The IT program is a culmination of our long term promise to deliver accesible and affordable cloud
                         computing to the Houston area.</p>
@@ -109,9 +105,10 @@ $(document).ready(function(){
         content.empty();
         content.addClass("text-center")
         content.append(
-            `<div class="row p-4">
-                <div class="col-lg-6 col-sm-12">
-                    <h3>An experience, unlike any other.</h3>
+            `<div class="row p-4 m-4">
+                <div class="col-lg-6 col-sm-12 my-auto">
+                    <h3>An Experience, Unlike Any Other.</h3>
+                    <br>
                     <p>Our cutting edge cirriculum in green energy techonologies boasts the first ever co-operative program,
                         designed in part by our airship crew. Get hands on exprience working with mechanics and electrical systems that keep the airship afloat. 
                     </p>
@@ -134,39 +131,37 @@ $(document).ready(function(){
         content.addClass("text-center")
         content.append(
 
-            `<div class="row p-4 ">
+            `<div class="row p-4 m-4">
             <div class="col-lg-6 col-sm-12">
-            <h4>Information Technology</h4>
-            Cloud Networking AAS Degree, Cisco Track
-            <br>
-            Cloud Networking AAS Degree, Microsoft Track
-            <br>
-            Cloud Network Administrator Certificate: Cisco Track
-            <br>
-            Cloud Network Administrator Certificate: Microsoft Track
-            <br>
-            CCCNA (Cisco Certified Cloud Networking Associate)
-            <br>
-            <br>
+                <h4>Information Technology</h4>
+                <br>
+                Cloud Networking AAS Degree, Cisco Track
+                <br>
+                Cloud Networking AAS Degree, Microsoft Track
+                <br>
+                Cloud Network Administrator Certificate: Cisco Track
+                <br>
+                Cloud Network Administrator Certificate: Microsoft Track
+                <br>
+                CCCNA (Cisco Certified Cloud Networking Associate)
+                <br>
+                <br>
             </div>
             <div class="col-lg-6 col-sm-12">
-            <h4>Renewable Energy</h4>
-            Fuel Cell Systems Electrician Marketable Skills Award
-            <br>
-            Solar Photovoltaic System Electrician Marketable Skills Award
-            <br>
-            Wind Turbine System Electrician Marketable Skills Award
-            </div>
-
-
-            
+                <h4>Renewable Energy</h4>
+                <br>
+                Fuel Cell Systems Electrician Marketable Skills Award
+                <br>
+                Solar Photovoltaic System Electrician Marketable Skills Award
+                <br>
+                Wind Turbine System Electrician Marketable Skills Award
             </div>
         </div>
             `
         )
         content.collapse('toggle');
         
-        console.log('click partnerships')
+        
     })
 
    
