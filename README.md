@@ -8,6 +8,10 @@ A single-page microsite using the following information that promotes the openin
 * Emphasize the unique location of the new campus
 * Promote enrollment in key programs to prospective students
 
+## Deployment:
+
+https://stevencmann2.github.io/LSCAirship/
+
 ## Visuals
 
 ![Image of Page Layout](./assets/images/LandingPageLayout.png)
