@@ -10,7 +10,7 @@ A single-page microsite using the following information that promotes the openin
 
 ## Visuals
 
-![Image of Page Layout](./assets/images/Landing_Page_Layout.png)
+![Image of Page Layout](./assets/images/LandingPageLayout.png)
 
 ## Summary:
 
