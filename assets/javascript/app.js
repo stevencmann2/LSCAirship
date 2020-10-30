@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    //MOMENT INSTANCE
+    //TIME INSTANCE
     let grandOpening = new Date('April 1, 2021 00:00:00').getTime();
     
     //logic for contdown clock
@@ -30,67 +30,50 @@ $(document).ready(function(){
         });
 
     // COUNTDOWN CARD CLOSE
-    $('.close').click(function(){
+    $('.close').click(function(e){
+        e.preventDefault()
         $('#countdown-close').parent().slideUp();
       })
 
+
+      // VIDEO BANNER BUTTON SCROLL
+      $("#video-button").click(function(e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: $('#programs').offset().top -180 }, 'slow')
+    });
+
+    $("#enroll-button").click(function (e) {
+        e.preventDefault();
+         window.open("https://www.lonestar.edu/admissions.htm")
+
+    });
+
+    
     //navbar change on scroll
     $(window).scroll(function() {
         // toggle navbar color 
         $(".navbar").toggleClass('scrolled', $(this).scrollTop() > $(".navbar").height()*1.5);
+        $("#inner_nav").toggleClass("navbar-brand", $(this).scrollTop() > $(".navbar").height()*1.5)
+        $("#inner_nav").toggleClass("animate__animated animate__flipInX", $(this).scrollTop() > $(".navbar").height()*1.5);
+        $("#inner_nav").toggleClass("navbar-brand", $(this).scrollTop() > $(".navbar").height()*1.5)
+        
+        
+        // $("#inner_nav").toggleClass("animate__animated animate__lightSpeedInLeft", $(this).scrollTop() < $(".navbar").height()*1.5);
+
+
+       
+        
         //toggle logo disapear
     //    $("#initial-logo").toggleClass("animate__animated animate__fadeOut", $(this).scrollTop() > $(".navbar").height()*1.5)
     })
 
-
-
-
-  
-    // Paragraphs
-    const itParagraph = $("#it-content")
-    const energyParagraph = $("#energy-content")
-
-    // clickable icons
-    const itToggle = $("#it-toggle")
-    const energyToggle = $("#energy-toggle")
-    const itToggleUp = $('#it-toggle-up').hide()
-    const energyToggleUp = $('#energy-toggle-up').hide()
-    
-    //ENERGY CONTENT
-    energyToggle.on( "click", function(e) {
-        e.preventDefault();
-        energyParagraph.collapse('toggle')
-        energyToggle.hide()
-        energyToggleUp.show()
-
-    });
-
-    energyToggleUp.on( "click", function(e) {
-        e.preventDefault();
-        energyParagraph.collapse('toggle')
-        energyToggle.show()
-        energyToggleUp.hide()
-
-    });
-
-    //IT CONTENT
-    itToggle.on( "click", function(e) {
-        e.preventDefault();
-        itParagraph.collapse('toggle')
-        itToggle.hide()
-        itToggleUp.show()
-
-    });
-
-    itToggleUp.on( "click", function(e) {
-        e.preventDefault();
-        itParagraph.collapse('toggle')
-        itToggle.show()
-       itToggleUp.hide()
-
-    });
-
     /////// Banner accordian
+
+    
+
+
+    
 
     const it = $("#it");
     const energy = $("#energy");
@@ -104,18 +87,16 @@ $(document).ready(function(){
         content.addClass("text-center")
         content.append(
             `
-            <div class="row">
-                <div class="col">
+            <div class="row p-4">
+                <div class="col-lg-6 col-sm-12">
                     <h3>Cloud Computing</h3>
                     <p>On the cutting edge of technology, Lone Star College is proud to offer our new IT program.
                         The IT program is a culmination of our long term promise to deliver accesible and affordable cloud
                         computing to the Houston area.</p>
                 </div>
-
-                <div class="col h-10">
+                <div class="col-lg-6 col-sm-12">
                     <img src="./assets/images/cloud-computing.jpg" class="img-fluid" alt="Cloud Computing">
                 </div>
-
             </div>
             `
         )
@@ -128,19 +109,16 @@ $(document).ready(function(){
         content.empty();
         content.addClass("text-center")
         content.append(
-            `<div class="row justify-content-center" style="background-color: grey">
-
-                <div class="col-lg-6 md-6 sm-12">
-                    <h3>An immersive experience, unlike any other.</h3>
+            `<div class="row p-4">
+                <div class="col-lg-6 col-sm-12">
+                    <h3>An experience, unlike any other.</h3>
                     <p>Our cutting edge cirriculum in green energy techonologies boasts the first ever co-operative program,
                         designed in part by our airship crew. Get hands on exprience working with mechanics and electrical systems that keep the airship afloat. 
                     </p>
                 </div>
-
-                <div class="col-lg-6 md-6 sm-12">
+                <div class="col-lg-6 col-sm-12">
                     <img src="./assets/images/solar-panels.jpg" class="img-fluid" alt="Solar Panels">
                 </div>
-
             </div>
             `
         )
@@ -155,15 +133,35 @@ $(document).ready(function(){
         content.empty();
         content.addClass("text-center")
         content.append(
-            `<div>
-                <br>
-                <br>
-                &#8226; Fuel Cell Systems Electrician Marketable Skills Award
-                <br>
-                &#8226; Solar Photovoltaic System Electrician Marketable Skills Award
-                <br>
-                &#8226; Wind Turbine System Electrician Marketable Skills Award
+
+            `<div class="row p-4 ">
+            <div class="col-lg-6 col-sm-12">
+            <h4>Information Technology</h4>
+            Cloud Networking AAS Degree, Cisco Track
+            <br>
+            Cloud Networking AAS Degree, Microsoft Track
+            <br>
+            Cloud Network Administrator Certificate: Cisco Track
+            <br>
+            Cloud Network Administrator Certificate: Microsoft Track
+            <br>
+            CCCNA (Cisco Certified Cloud Networking Associate)
+            <br>
+            <br>
             </div>
+            <div class="col-lg-6 col-sm-12">
+            <h4>Renewable Energy</h4>
+            Fuel Cell Systems Electrician Marketable Skills Award
+            <br>
+            Solar Photovoltaic System Electrician Marketable Skills Award
+            <br>
+            Wind Turbine System Electrician Marketable Skills Award
+            </div>
+
+
+            
+            </div>
+        </div>
             `
         )
         content.collapse('toggle');
@@ -171,9 +169,7 @@ $(document).ready(function(){
         console.log('click partnerships')
     })
 
-
-
-
+   
 
 
 

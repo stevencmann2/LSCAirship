@@ -20,8 +20,15 @@ body {
     height: 100%;
     margin: 0;
     padding: 0;
-    cursor: url("../images/Airship-cursor.jpg"), auto;
+    background-color: black;
+    background-image: linear-gradient(70deg, #c7eafb 0%, black 74%);
+    
+    
 
+}
+
+.backg-blue {
+    background-color: #003768;
 }
 
 /*
@@ -31,9 +38,10 @@ NavBar Styling
 .navbar {
     background: rgba(0, 0, 0, 0.6);
     
+    
 }
 
-#initial-logo {
+.initial-logo {
     height: 6rem
 }
 
@@ -46,7 +54,7 @@ NavBar TRANSPARENT and scrolling
 }
 
 .navbar-dark.scrolled {
-    background-color: black !important;
+    background-color: #b30838 !important;
     transition: background-color 400ms linear;
 }
 
@@ -60,41 +68,54 @@ NavBar img size
 
 
 
+
+
+
 /*
 Document
 */
 
+
 h1 { 
     font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
-    font-size: 24px; font-style: normal; 
+    font-size: 2em; font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
-    line-height: 26.4px; 
+    line-height: 1.5; 
+}
+
+h2 { 
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+    font-size: 1.75em; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 1.2; 
 }
 
 h3 { 
     font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
-    font-size: 14px; font-style: normal; 
+    font-size: 1.5em; font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
-    line-height: 15.4px; 
+    line-height: 1.2; 
 } 
 
 h4 { 
     font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
-    font-size: 12px; font-style: normal; 
+    font-size: 1.2em; font-style: normal; 
     font-variant: normal; 
     font-weight: 700; 
-    line-height: 15.4px; 
+    line-height: 1.2; 
 } 
     
 p { 
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
-    font-size: 14px; 
+    font-family: 'Futura Std', arial, helvetica, sans-serif; 
+    font-size: 1.05em; 
     font-style: normal; 
     font-variant: normal; 
     font-weight: 400; 
-    line-height: 20px; 
+    line-height: 1.75em; 
 } 
     
 .backg-image {
@@ -105,11 +126,25 @@ p {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    height: 50vh;
+    height: auto;
     width: 100%;    
 
 }
 
+#partnernships, #it, #energy{
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif; 
+    font-size: 1.2em; font-style: normal; 
+    color: white;
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 1.2; 
+
+}
+
+#partnernships:hover, #it:hover, #energy:hover {
+    color: #b30838;
+
+}
 
 
 
@@ -227,8 +262,9 @@ Countdown Card
     bottom:0.5rem;
     right:0.5rem;
     position: fixed;
-    background-color: chartreuse;
-    opacity:0.8;
+    background-color:#003768;
+    color: white;
+    opacity:0.9;
     z-index:1;
 }
 .countdown-card-body {
@@ -237,10 +273,50 @@ Countdown Card
 
 }
 
+  /*
+buttons
+*/
+#cdc-button:hover, #enroll-button:hover, #video-button:hover {
+ background-color: #b30838;
+ color: white;
+}
 
+  /*
+SPACING
+*/
 
+.header_1_spacing {
+    margin-bottom: 7vh
+}
 
+.p_spacing {
+    margin-bottom: 5vh
 
+}
+
+#accordian-copy {
+
+    padding: 20px;
+}
+
+#accordian-content{
+    color:white
+}
+
+.links-blue{
+    color: white;
+    text-decoration: none;
+}
+.links-blue:hover{
+    color: #003768;
+    text-decoration: none;
+}
+
+#cr_footer {
+    background-color: #b30838; 
+    color: white; 
+    font-size: 0.5rem;
+}
 
   /*
 MEDIA QUERIES
