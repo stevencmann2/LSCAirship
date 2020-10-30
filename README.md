@@ -8,6 +8,9 @@ A single-page microsite using the following information that promotes the openin
 * Emphasize the unique location of the new campus
 * Promote enrollment in key programs to prospective students
 
+## Visuals
+
+![Image of Page Layout](./assets/images/Landing_Page_Layout.png)
 
 ## Summary:
 
