@@ -320,7 +320,8 @@ clock font
 .cdc-numbers{
 
     font-family: 'Orbitron', sans-serif;
-    color: #f1c585
+    color: #f1c585; 
+    font-size: 1.3rem;
 }
 
  /*
